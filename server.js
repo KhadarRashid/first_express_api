@@ -8,6 +8,6 @@ app.use(express.static(path.join(__dirname, "hello-vue", "dist")))
 
 app.use("/api", routes)
 
-let server = app.listen(process.env.Port || 3000, function(){
+let server = app.listen(process.env.PORT || 3000, function(){
     console.log("Express server running on port", server.address().port)
 })
